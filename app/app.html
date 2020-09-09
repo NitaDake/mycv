@@ -1,0 +1,63 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <style>
+      .button {
+        background-color: rgb(31, 31, 30);
+        color: white;
+      }
+    </style>
+    <ion-toolbar style="background-color:#105c32;min-height: 56px;padding: 0px;">
+      <ion-title style="background-color:#105c32;padding:0px;"></ion-title>
+      <ion-row style="margin-top:7px">
+        <ion-col>
+          <img
+            style="padding:2px;border: 2px solid rgb(252, 253, 251);display: block;width:100px;height: 100px;border-radius: 50%;"
+            [src]="path" align="center" (click)="openImageOptions()" />
+        </ion-col>
+      </ion-row>
+      <ion-row style="margin-bottom:7px">
+        <div style="padding: 7px;" (click)="openEditProfile()" menuToggle>
+          <div style="font-size: 18px;color:whitesmoke;font-size: 15px;font-family: Times New Roman ;">
+            <ion-row> {{userData.name}}</ion-row>
+            <br>
+            <ion-row>{{userData.design}} </ion-row>
+            <br>
+            <ion-row>{{userData.cno}} </ion-row>
+            <br>
+           
+          </div>
+
+        </div>
+      </ion-row>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content style="background-color:#105c32">
+    <ion-list no-lines style="padding-top: 13px;">
+      <button id="btn{{i}}" class="button" menuClose ion-item *ngFor="let p of pages;let i = index"
+        (click)="openPage(p,i)"
+        style=" background:linear-gradient(to bottom right, #0b532b 60%, #198c37);border-bottom: solid white;border-width: thin;font-family: Times New Roman ;font-size: 2.2rem; ">
+        <ion-icon ios="ios-{{iconArray[i]}}" md="md-{{iconArray[i]}}" item-start></ion-icon>
+        {{p.title}}
+        <ion-badge *ngIf="notiCount>0 && p.title =='About'" color="white" style="background: white;color:#105c32;"
+          item-end>{{ notiCount }}</ion-badge>
+      </button>
+     
+    </ion-list>
+
+    <!-- <div style="bottom: 0px; color: white; position: absolute;">
+      <ion-list style="position: absolute; padding-left: 19px;">
+        <ion-label style="font-family: Times New Roman ;font-size: 2rem;"> version - 4.4.1</ion-label>
+      </ion-list>
+    </div> -->
+
+
+
+
+
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

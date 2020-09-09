@@ -1,0 +1,377 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.toolbar-title-md {
+    padding: 0 12px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: whitesmoke!important;
+    font-family: 'Times New Roman';
+    /* color: #424242; */
+    
+}
+// .ionic3-star-rating[_ngcontent-c1] .button[_ngcontent-c1] {
+//     background: none;
+//     box-shadow: none;
+//     -webkit-box-shadow: none;
+//     width: 18px;
+//     height: 18px;
+// }
+.disable-hover button button-md button-default button-default-md{
+    background: none;
+    box-shadow: none;
+    width: 18px;
+    height: 18px;
+    -webkit-box-shadow: none;
+}
+.spinner-ios svg, .spinner-ios-small svg {
+    -webkit-animation: spinner-fade-out 1s linear infinite;
+    animation: spinner-fade-out 1s linear infinite;
+}
+  .loading-md .spinner-dots circle {
+    fill: #105c32;
+}
+    .loading-md .loading-wrapper {
+    border-radius: 2px;
+    max-width: 280px;
+    max-height: 90%;
+    color: #105c32!important;
+    background: transparent!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    padding: 24px;
+}
+.pp .popover-content
+{
+width: 90% !important;
+height: 90% !important;
+bottom: 0px;
+position: absolute;
+top: 70px;
+left: 40px;
+right: 80px;
+}
+#bodycon
+    {
+    font-family: 'Times New Roman';
+    }
+.loading-wrapper {
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0;
+        transform: scale(2,2)!important;
+}
+
+.toolbar-background-md {
+    border-color: #b2b2b2;
+    /*background: #f8f8f8;*/
+    background: linear-gradient(to bottom right, #0b532b 60%, #198c37)!important;
+    /*background-color: transparent;*/
+}
+.back-button.show-back-button {
+    display: inline-block;
+    color: whitesmoke !important;
+}
+.checkbox-md .checkbox-icon {
+    border-radius: 2px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #787878;
+    background-color: #fff;
+    -webkit-transition-duration: 280ms;
+    transition-duration: 280ms;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-md .checkbox-checked {
+    border-color: #488aff;
+    background-color: #488aff;
+}
+.checkbox-md .checkbox-checked .checkbox-inner {
+    left: 9px;
+    top: 6px;
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    border-width: 2px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-style: solid;
+    border-color: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+  
+  .menu-inner {
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    -webkit-transform: translate3d(-9999px, 0, 0);
+    transform: translate3d(-9999px, 0, 0);
+    position: absolute;
+    display: block;
+    width: 65%;
+    height: 100%;
+    contain: strict;
+}
+.alert-md .alert-title {
+    font-size: 18px;
+    color: black;
+}
+.alert-md .alert-head 
+{
+  background-color: white;
+  }
+  .alert-md .alert-button-group 
+  {
+    background-color: white;
+}
+/*.alert-md .alert-wrapper {
+    border-radius: 10px;*/
+    /*max-width: 580px;*/
+  /*  background-color: white;
+    color: black;
+    -webkit-box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 16px 20px black;
+}*/
+/*.alert-md .alert-head {
+  text-align: left;
+  text-align: start;
+ padding: 24px 24px 15px;
+    background: white;
+    
+}*/
+/*.alert-md .alert-button-group {
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    background-color: white;
+    padding: 8px 8px 3px 12px;
+}*/
+.customMargin
+        {
+          margin-top: 5px;
+          color:black;
+        }
+.input-md[clearInput] .text-input {
+          color: black;
+      }
+
+button{
+  border-radius: 5px;
+}
+.button-md,.button.md full {
+    border-radius: 5px;
+}
+.list-md {
+    margin: -1px 2px 16px;
+}
+/*button:active,.button.md:active,.button.md full:active,button1:active{
+   background-color: rgb(10,10,10);
+}*/
+md-dark .toolbar-title-md {
+    color: green;
+    text-align: center;
+}
+.item-md ion-icon[item-left] + .item-inner, .item-md ion-icon[item-left] + .item-input, .item-md ion-icon[item-start] + .item-inner, .item-md ion-icon[item-start] + .item-input {
+    margin-left: 15px;
+}
+.item-block {
+    margin: 0;
+    border-radius: 5px;
+    text-align: initial;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 4.4rem;
+    border: 0;
+    font-weight: normal;
+    line-height: normal;
+    text-decoration: none;
+    color: inherit;
+}
+
+  ion-segment {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.card-md {
+  margin: 0px;
+  border-radius: 5px;
+  width:100%;
+  font-size: 1.4rem;
+  background: rgb(126, 145, 230);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  /* opacity: 1; */
+}
+.alert-md .alert-title {
+    font-size: 18px;
+    color: white;
+}
+.alert-md .alert-head {
+    background-color: #105c32;
+    text-align: -webkit-center;
+    color: white;
+}
+/*.alert-md .alert-button {
+    text-align: right;
+    text-align: end;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: wheat;
+    background-color: transparent;
+    margin: 0 8px 0 0;
+    padding: 10px;
+}*/
+.alert-md [aria-checked=true] .alert-checkbox-icon {
+    border-color: #105c32!important;
+    background-color: #105c32!important;
+}
+.alert-md .alert-button {
+    text-align: right;
+    text-align: end;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    margin: 0px 45px 0 0;
+    padding: 10px;
+    font-size: 15px;
+}
+.alert-md .alert-button-group {
+    background-color: #105c32;
+    /* color: white; */
+}
+.alert-md .alert-message, .alert-md .alert-input-group {
+    color: black;
+    padding: 0px 47px 24px;
+}
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    color: #fff;
+    font-size: 1.0625em;
+    width: 100px;
+    height: 30px;
+}
+.swal2-styled.swal2-cancel {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: #aaa;
+    color: #fff;
+    font-size: 1.0625em;
+    width: 100px;
+    height: 30px;
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color: white;
+    background-color: transparent;
+}
+.action-sheet-md .action-sheet-title {
+    text-align: left;
+    text-align: start;
+    font-size: 1.6rem;
+    padding: 11px 16px 17px;
+    background-color: #105c32;
+    color: white;
+    text-align: -webkit-center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.action-sheet-md .action-sheet-icon {
+    padding: 0;
+    text-align: center;
+    width: 2.3rem;
+    font-size: 2.4rem;
+    vertical-align: middle;
+    margin: 0px 110px 0 0px;
+}
+/*ion-app.md [padding] .scroll-content {
+    padding: 16px;
+    background-color: antiquewhite;
+}*/
+.checkbox-md .checkbox-checked {
+    border-color: lightgray;
+    background-color: #105c32;
+}
+.ion-page > ion-content {
+    position: absolute;
+    background-color: lavenderblush;
+}
+
+@font-face
+{
+  font-family: 'Aclonica';
+  src: url('../assets/fonts/myfonts/loto.woff') format('truetype'); /*//this works*/
+ /* //src:url('../assets/fonts/loto.woff') format("woff");*/
+  font-size: normal;
+  font-weight: normal;
+}
